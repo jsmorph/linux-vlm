@@ -28,7 +28,7 @@ AC_CHECK_LIB([X11], [XKeysymToKeycode],[],
 AC_CHECK_LIB([xcb], [xcb_disconnect],[:])
 AC_CHECK_LIB([c], [fprintf],[],
 		    [AC_MSG_ERROR([you need libc to compile the vlm])])
-AC_CHECK_LIB([crypt], [encrypt],[],
+AC_CHECK_LIB([crypt], [crypt],[],
 		    [AC_MSG_ERROR([you need libcrypt to compile the vlm])])
 AC_CHECK_LIB([dl], [dlopen],[],
 		    [AC_MSG_ERROR([you need libdl to compile the vlm])])
